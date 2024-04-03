@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home Page</title>
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+	<div class="Menu">
+		<!-- Hamburger menu icon -->
+		<div class="fixed top-4 left-4 cursor-pointer z-50 md:hidden">
+			<svg class="hamburger-menu text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+			</svg>
+		</div>
+
+		<!-- Mobile menu -->
+		<div class="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 z-40 hidden">
+			<div class="flex justify-end pt-4 pr-4">
+				<svg class="close-icon text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+				</svg>
+			</div>
+			<ul class="flex flex-col items-center justify-center h-full">
+				<li><a href="#" class="text-gray-200 hover:text-gray-400 py-2">Home</a></li>
+				<li><a href="#" class="text-gray-200 hover:text-gray-400 py-2">Products</a></li>
+				<li><a href="#" class="text-gray-200 hover:text-gray-400 py-2">About Us</a></li>
+				<li><a href="#" class="text-gray-200 hover:text-gray-400 py-2">Blog</a></li>
+				<li><a href="#" class="text-gray-200 hover:text-gray-400 py-2">Doc</a></li>
+				<li><a href="#" class="text-gray-200 hover:text-gray-400 py-2">Support</a></li>
+				<li><a href="#" class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition duration-200">Login</a></li>
+			</ul>
+		</div>
+
+		<!-- Glassmorphism effect responsive menu -->
+		<div class="fixed top-0 left-0 w-full z-50 bg-white shadow-md py-4 glass-bg hidden md:block">
+			<div class="container mx-auto flex justify-between items-center px-4">
+				<!-- Left side: Logo -->
+				<div class="flex items-center space-x-4">
+					<img src="./assets/images/logo.svg" alt="Logo" class="h-10">
+				</div>
+				<!-- Right side: Menu list -->
+				<ul class="flex items-center space-x-8">
+					<li><a href="#" class="text-gray-700 hover:text-gray-900">Home</a></li>
+					<li class="relative group">
+						<a href="#" class="text-gray-700 hover:text-gray-900 flex items-center">
+							Products
+							<!-- Arrow icon -->
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1 rotate-icon text-gray-500 group-hover:text-gray-900 transition duration-300" viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+							</svg>
+						</a>
+						<!-- Nested dropdown menu for Products -->
+						<ul class="absolute left-0 w-64 mt-0 bg-white rounded-md shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
+							<li>
+								<a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex items-center">
+									<!-- Icon for Product Layouts -->
+									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+										<path fill-rule="evenodd" d="M10 3a7 7 0 100 14 7 7 0 000-14zM9 9a1 1 0 011-1h1a1 1 0 110 2H9a1 1 0 01-1-1zm0-2a1 1 0 100 2h2a1 1 0 100-2H9z" clip-rule="evenodd" />
+									</svg>
+									Product Layouts
+								</a>
+							</li>
+							<li>
+								<a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex items-center">
+									<!-- Icon for WC Thank You Page -->
+									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+										<path fill-rule="evenodd" d="M12.707 9.293a1 1 0 010 1.414L10.414 12H14a1 1 0 110 2H6a1 1 0 110-2h3.586l-2.293-2.293a1 1 0 111.414-1.414L10 11.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+									</svg>
+									WC Thank You Page
+								</a>
+							</li>
+						</ul>
+												
+					</li>
+					<li><a href="#" class="text-gray-700 hover:text-gray-900">About Us</a></li>
+					<li><a href="#" class="text-gray-700 hover:text-gray-900">Blog</a></li>
+					<li><a href="#" class="text-gray-700 hover:text-gray-900">Doc</a></li>
+					<li><a href="#" class="text-gray-700 hover:text-gray-900">Support</a></li>
+					<li><a href="#" class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition duration-200">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./assets/js/script.js"></script>
+</body>
+</html>

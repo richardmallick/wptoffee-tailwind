@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.glass-bg {
+	background: rgba(255, 255, 255, 0.15);
+	backdrop-filter: blur(10px);
+}
+.rotate-icon:hover svg{
+	transform: rotate(-180deg);
+	transition: transform 0.3s ease-in-out;
+}
+
+ /* Hamburger menu icon styles */
+ .hamburger-menu {
+	width: 30px;
+	height: 30px;
+}
+.close-icon {
+	width: 20px;
+	height: 20px;
+}
+
+/* Slide animation */
+.slide-in {
+	animation: slideIn 0.5s forwards;
+}
+.slide-out {
+	animation: slideOut 0.5s forwards;
+}
+@keyframes slideIn {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0%);
+	}
+}
+@keyframes slideOut {
+	from {
+		transform: translateX(0%);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
